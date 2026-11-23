@@ -13,7 +13,7 @@ const translations = {
 
     // Home
     'hero.greeting': "Hi, I'm",
-    'hero.title': 'I build things for the web & desktop.',
+    'hero.title': 'I create digital solutions for web & desktop.',
     'hero.desc': 'Software Developer with several years of professional experience building and maintaining applications using C#, .NET, SQL, REST APIs, and Angular. Passionate about creating reliable, user-friendly software that solves real problems.',
     'hero.btn.work': 'View My Work',
     'hero.btn.contact': 'Get In Touch',
@@ -93,7 +93,7 @@ const translations = {
 
     // Home
     'hero.greeting': 'Zdravo, ja sam',
-    'hero.title': 'Razvijam web i desktop aplikacije.',
+    'hero.title': 'Kreiram web i desktop digitalna rješenja.',
     'hero.desc': 'Softver developer sa višegodišnjim profesionalnim iskustvom u razvoju i održavanju aplikacija koristeći C#, .NET, SQL, REST API-je i Angular. Strastveno posvećen kreiranju pouzdanog softvera koji rješava stvarne probleme.',
     'hero.btn.work': 'Moji radovi',
     'hero.btn.contact': 'Kontaktiraj me',
