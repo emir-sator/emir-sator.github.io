@@ -424,3 +424,11 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# Source files (editable backups — do not push)
+*.src.html
+*.src.js
+*.src.css
+
+# Screenshots
+*.png
