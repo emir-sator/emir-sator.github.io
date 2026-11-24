@@ -306,6 +306,13 @@ ul {
   margin-top: 50px;
 }
 
+.hero-contact-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
 .hero-hint {
   font-size: 0.78rem;
   color: var(--text-muted);
@@ -941,11 +948,65 @@ ul {
   background: var(--accent-glow);
 }
 
+/* ---------- Privacy ---------- */
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 800px;
+}
+
+.privacy-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: all var(--transition);
+}
+
+.privacy-block:hover {
+  border-color: var(--accent);
+}
+
+.privacy-icon {
+  margin-bottom: 16px;
+}
+
+.privacy-block h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.privacy-block p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
 /* ---------- Footer ---------- */
 .footer {
   padding: 16px 0;
   border-top: 1px solid var(--border);
   text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--accent);
 }
 
 .footer p {
@@ -1260,6 +1321,13 @@ ul {
   .btn {
     justify-content: center;
   }
+
+  .hero-contact-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
 
   .contact-grid {
     grid-template-columns: 1fr;

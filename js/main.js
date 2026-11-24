@@ -66,7 +66,20 @@ const translations = {
     'skill.backend': 'Backend Development',
     'skill.frontend': 'Frontend Development',
     'skill.desktop': 'Desktop & Tools',
+    'footer.privacy': 'Data Protection',
     'footer.credit': 'Designed & Built by <a href="https://github.com/emir-sator">Emir Šator</a>',
+
+    // Privacy
+    'privacy.label': 'Privacy',
+    'privacy.title': 'Data Protection',
+    'privacy.data.title': 'Data Protection',
+    'privacy.data.text': 'Personal data provided on this website will be used strictly in accordance with EU data protection regulations. Personal data is collected voluntarily and is used for consultations, advertising, and marketing only with explicit consent. Please note that this website does not store your data in digital form on web servers.',
+    'privacy.cookies.title': 'Cookies',
+    'privacy.cookies.text': 'Cookies are small text files that are copied to your computer when you visit a website. They do not contain viruses and do not collect personal data. You can disable cookies in your browser settings. This website uses cookies exclusively for anonymous statistical processing and improving user experience.',
+    'privacy.analytics.title': 'Google Analytics',
+    'privacy.analytics.text': 'Our website uses Google Analytics to analyze website visits. Google Analytics uses cookies that are transferred to and stored on Google servers. Google may use this data to evaluate the use of the website. Google will not associate your IP address with other data held by Google. You can prevent the installation of cookies by selecting the appropriate settings in your browser. However, please note that in this case you may not be able to use all features of this website to their full extent. By using this website, you consent to the processing of data collected by Google in the manner described and for the stated purpose.',
+    'privacy.contact.title': 'Contact Form',
+    'privacy.contact.text': 'Users who contact us via the contact form on the website grant us the right to store personal data (first name, last name, phone number, email address, and message) exclusively for the purpose of responding to inquiries and providing requested information. This data is not shared with third parties nor used for commercial purposes without the explicit consent of the user. Users have the right to access, correct, and delete their personal data in accordance with applicable regulations.',
 
     // About
     'about.label': 'About Me',
@@ -153,7 +166,20 @@ const translations = {
     'skill.backend': 'Backend razvoj',
     'skill.frontend': 'Frontend razvoj',
     'skill.desktop': 'Desktop i alati',
+    'footer.privacy': 'Zaštita podataka',
     'footer.credit': 'Dizajnirao i razvio <a href="https://github.com/emir-sator">Emir Šator</a>',
+
+    // Privacy
+    'privacy.label': 'Privatnost',
+    'privacy.title': 'Zaštita podataka',
+    'privacy.data.title': 'Zaštita podataka',
+    'privacy.data.text': 'Osobni podaci navedeni na prezentaciji koristit će se strogo u skladu s odredbama zakona o zaštiti podataka EU-a. Osobni podaci se prikupljaju dobrovoljno te se koriste za konzultacije, oglašavanje i marketing samo uz izričit pristanak. Napominjemo da ova web stranica ne pohranjuje Vaše podatke u digitalnom obliku na web poslužiteljima.',
+    'privacy.cookies.title': 'Kolačići (Cookies)',
+    'privacy.cookies.text': 'Kolačići su male tekstualne datoteke koje se kopiraju na vaše računalo kada posjetite web stranicu. Ne sadrže viruse i ne prikupljaju osobne podatke. Možete onemogućiti kolačiće u postavkama vašeg preglednika. Stranica koristi kolačiće isključivo za anonimnu statističku obradu i poboljšanje korisničkog iskustva.',
+    'privacy.analytics.title': 'Google Analytics',
+    'privacy.analytics.text': 'Web stranica koristi Google Analytics za analizu posjeta web stranici. Google Analytics koristi kolačiće koji se prenose na Google servere i pohranjuju na njima. Google može koristiti ove podatke u svrhu procjene korištenja web stranice. Google neće svrstati vašu IP adresu s drugim podacima koje Google posjeduje. Možete spriječiti instalaciju kolačića odabirom odgovarajućih postavki vašeg preglednika. Međutim, napominjemo da u tom slučaju možda nećete moći koristiti sve funkcionalnosti ove web stranice u potpunosti. Korištenjem ove web stranice pristajete na obradu podataka koje prikuplja Google na opisani način i u navedenu svrhu.',
+    'privacy.contact.title': 'Kontakt forma',
+    'privacy.contact.text': 'Korisnici koji nas kontaktiraju putem kontakt forme na web stranici daju nam pravo na pohranu osobnih podataka (ime, prezime, broj telefona, e-mail adresa i poruka) isključivo u svrhu odgovaranja na upite i pružanja traženih informacija. Ovi podaci se ne prenose trećim stranama niti se koriste u komercijalne svrhe bez izričitog pristanka korisnika. Korisnici imaju pravo uvida, ispravka i brisanja svojih osobnih podataka u skladu s važećim propisima.',
 
     // About
     'about.label': 'O meni',
@@ -387,8 +413,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Desktop: cookie settings link in footer
   let settingsBtn = null;
-  const footer = document.querySelector('.footer .container p');
-  if (footer) {
+  const footerLinks = document.querySelector('.footer .footer-links');
+  if (footerLinks) {
     settingsBtn = document.createElement('button');
     settingsBtn.className = 'cookie-settings';
     settingsBtn.setAttribute('data-i18n', 'cookie.settings');
@@ -398,8 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
       updatePopupStatus();
       popup.classList.toggle('show');
     });
-    footer.parentNode.appendChild(document.createElement('br'));
-    footer.parentNode.appendChild(settingsBtn);
+    footerLinks.appendChild(settingsBtn);
   }
 
   // Mobile: floating cookie button
