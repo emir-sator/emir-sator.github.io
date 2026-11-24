@@ -219,6 +219,13 @@ ul {
   margin-top: 80px;
 }
 
+.home-skills-title {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
 .hero-compact .skills-grid {
   gap: 16px;
 }
@@ -295,6 +302,14 @@ ul {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.hero-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .btn {
@@ -373,6 +388,17 @@ ul {
   color: var(--text-secondary);
   max-width: 600px;
   margin-bottom: 48px;
+}
+
+/* ---------- Quote ---------- */
+.section-quote {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-muted);
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+  margin-bottom: 32px;
+  line-height: 1.7;
 }
 
 /* ---------- Skills ---------- */
@@ -1254,7 +1280,7 @@ ul {
   }
 
   .home-skills {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
