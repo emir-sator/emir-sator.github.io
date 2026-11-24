@@ -61,7 +61,7 @@ const translations = {
     'hero.desc': 'Software Developer with several years of professional experience building and maintaining applications using C#, .NET, SQL, REST APIs, and Angular. Passionate about creating reliable, user-friendly software that solves real problems.',
     'hero.btn.work': 'View My Work',
     'hero.btn.contact': 'Get In Touch',
-    'hero.hint': '',
+    'hero.hint': "Don't be shy 😊",
     'home.skills': 'Skills',
     'skill.backend': 'Backend Development',
     'skill.frontend': 'Frontend Development',
@@ -71,7 +71,7 @@ const translations = {
     // About
     'about.label': 'About Me',
     'about.title': 'A bit about myself',
-    'about.desc': "I'm a software developer based in Sarajevo, Bosnia & Herzegovina. I enjoy building reliable software — whether it's a web application, desktop tool, or anything in between.<br><br>Outside of coding, I'm a curious and driven person who loves staying active. You'll often find me on the football pitch, tennis or basketball court, or at the gym — staying competitive keeps me sharp both on and off the screen.",
+    'about.desc': "I'm a software developer based in Sarajevo, Bosnia & Herzegovina. I enjoy building reliable software — whether it's a web application, desktop tool, or anything in between.<br><br>Outside of coding, I'm a curious and driven person who enjoys staying active. You'll often find me on the football pitch, tennis or basketball court, or at the gym — that sporting spirit keeps me balanced.",
     'exp.quote': '"Experience without theory is blind, but theory without experience is mere intellectual play." — Immanuel Kant',
     'exp.label': 'Experience',
     'exp.title': 'Work Experience',
@@ -158,7 +158,7 @@ const translations = {
     // About
     'about.label': 'O meni',
     'about.title': 'Nešto o meni',
-    'about.desc': 'Softver developer iz Sarajeva, fokusiran na razvoj kvalitetnih web i desktop aplikacija, prateći najnovije trendove i tehnologije u industriji.<br><br>Van kodiranja, radoznala sam i uporna osoba koja voli biti aktivna. Često me možete naći na fudbalskom terenu, teniskom ili košarkaškom igralištu, ili u teretani — takmičarski duh me drži oštrim i van ekrana.',
+    'about.desc': 'Softver developer iz Sarajeva, fokusiran na razvoj kvalitetnih web i desktop aplikacija, prateći najnovije trendove i tehnologije u industriji.<br><br>Van kodiranja, radoznao sam i uporan, uz to sam i fizički aktivan. Često me možete naći na fudbalskom terenu, teniskom ili košarkaškom igralištu, ili u teretani — taj sportski duh me održava u balansu.',
     'exp.quote': '"Iskustvo bez teorije je slijepo, ali teorija bez iskustva puka je intelektualna igra." — Immanuel Kant',
     'exp.label': 'Iskustvo',
     'exp.title': 'Radno iskustvo',
